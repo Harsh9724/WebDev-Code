@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            Flashing
+        </title>
+    </head>
+    <body>
+        <script>
+            let showingAlert = false;
+            const interval = setInterval(() => {
+                document.title = showingAlert ? 'Chat App' : '(1) New message';
+            
+                showingAlert = !showingAlert;
+            }, 1000);
+        </script>
+    </body>
+</html>
